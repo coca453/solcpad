@@ -1,0 +1,241 @@
+.carousel-caption {
+    left: 5%;
+    right: 5%;
+}
+
+.text-carousel {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.text-carousel-link {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.h-text-bold {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+}
+
+.h-media-title {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+.noticias {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.h-media-description {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.h-contacto {
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid #3B4AC9;
+}
+
+.h-card-header {
+    color: #111111;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.h-card-text {
+    color: #333333;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.h-card-link {
+    color: #111111;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.h-noticias {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.text-aniversario-title {
+    color: #FFFFFF;
+    font-size: 23px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-shadow: 0px 0px 10px #000000;
+    margin: 20px;
+}
+
+.text-aniversario {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.text-aniversario-link {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.h-asociaciones {
+    color: #133197;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.h-socios {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.h-socios-info {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.h-social {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.bg-overlay {
+    background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.bg-contacto {
+    background-color: #133197;
+    background: radial-gradient(at bottom right, #133197, #3345BF);
+}
+
+.bg-noticias {
+    background-color: #FF750F;
+    background: linear-gradient(#FF750F, #FF852B);
+}
+
+.bg-social {
+    background-color: #133197;
+    background: radial-gradient(at bottom right, #133197, #3345BF);
+}
+
+.bg-cuba {
+    background: url('../../../assets/img/home/bg_cuba.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 70px!important;
+    padding-bottom: 80px !important;
+}
+
+
+
+.bg-online {
+  background: url('../../../bg_congreso2021.jpg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-top: 70px!important;
+  padding-bottom: 80px !important;
+}
+
+@media(min-width: 768px){
+  .bg-online{
+    min-height: 78vh;
+  }
+}
+
+@media(max-width: 767px){
+  .bg-online{
+    min-height: 50vh;
+  }
+}
+
+.bg-violencia {
+    background: url('../../../assets/img/home/futbol_violencia.jpg') no-repeat;
+    background-size: cover;
+}
+
+.bg-socios {
+    background: url('../../../assets/img/home/bg_socios.jpg') no-repeat;
+    background-size: cover;
+}
+
+.bg-campus {
+    background: url('../../../assets/img/home/bg_campus.jpg') no-repeat;
+    background-size: cover;
+}
+
+.bg-futbol {
+    background: url('../../../assets/img/home/bg_futbol.jpg') no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.text-aniversario-link{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.congreso-red{
+    color:red;
+    font-size: 26px;
+}
+
+video, iframe{
+    height: 100%;
+    width: 100%;
+}
+
+.comites{
+  width: 100%;
+}

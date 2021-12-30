@@ -1,0 +1,10 @@
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.modal-title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1px;
+}

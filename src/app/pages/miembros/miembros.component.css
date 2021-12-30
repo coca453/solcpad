@@ -1,0 +1,42 @@
+.m-card-header {
+    background-color: #444444;
+    background: radial-gradient(at bottom left, #444444, #666666);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+}
+
+.m-card-header-sol {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.m-media-title {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+.m-media-description {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.bg-banderas {
+    background: url('http://www.solcpad.com/scp/assets/img/miembros/banderas.png') center no-repeat;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+@media screen and (max-width: 1023px) {
+    
+    .bg-banderas {
+        background: none;
+    }
+}
+

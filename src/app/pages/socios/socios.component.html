@@ -1,0 +1,86 @@
+<ngx-spinner type="ball-rotate"></ngx-spinner>
+<div class="container-fluid">
+  <div class="row section">
+    <div class="col-12 section-title">
+      <i class="fa fa-id-card mr-3"></i>Socios</div>
+  </div>
+  <div class="card mt-4">
+    <div class="card-body p-3">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-socios">
+            Las personas interesadas en ser parte de SOLCPAD deberán completar el
+            <strong>formulario de inscripción adjuntando el C.V.</strong> con el fin de evaluar su inclusión.
+          </div>
+          <div class="text-socios mt-3">
+            En principio la convocatoria es solo para psicólogos especializados en deporte que lo puedan acreditar, o que estén realizando
+            la especialización. Los que no son psicólogos, son estudiantes, entrenadores , profesores de educación física,
+            médicos, etc. también pueden enviar su CV y se les responderá, ya que es abierta para todas las ciencias del
+            deporte.
+          </div>
+          <div class="text-socios mt-3">
+            De ser aceptados deberán pagar
+            <strong>25 dólares</strong> en concepto
+            <strong>anual</strong>, y este mínimo arancel incluye:
+          </div>
+          <ul class="list-group text-socios mt-4">
+            <li class="list-group-item">
+              <i class="fa fa-caret-right mr-3"></i>Membresía.
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-caret-right mr-3"></i>Publicar a futuro un trabajo en la pagina web.
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-caret-right mr-3"></i>Formar parte de foros de discusión.
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-caret-right mr-3"></i>Tener acceso a bibliografía especialmente seleccionada.
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-caret-right mr-3"></i>Tener la posibilidad de la respuesta de un mail por cada integrante de la comisión directiva de SOLCPAD
+              de asesoramiento o consulta, por año.
+            </li>
+            <li class="list-group-item">
+              <i class="fa fa-caret-right mr-3"></i>En un futuro formar parte de grupos de trabajo de ciencias del deporte.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mt-4">
+    <div class="card-header h-card-header">
+      <i class="fa fa-paper-plane-o mr-3"></i>Formulario de inscripción
+    </div>
+    <div class="card-body p-3">
+      <alert class="mb-2" *ngIf="response.message" [type]="response.type">
+        <div class="c-alert-text p-2">
+          <i class="fa mr-3" [ngClass]="{'fa-check' : response.type == 'success', 'fa-times' : response.type == 'danger'}"></i>{{ response.message }}
+        </div>
+      </alert>
+      <form #f="ngForm" (ngSubmit)="submit(f)">
+        <div class="form-group" [ngClass]="{'is-invalid': !nombre.valid && nombre.touched}">
+          <label for="nombre">Nombre y Apellido</label>
+          <input type="text" class="form-control" ngModel name="nombre" #nombre="ngModel" id="nombre" placeholder="Ingrese su nombre y Apellido"
+            required>
+          <div *ngIf="!nombre.valid && nombre.touched" class="text-primary mt-2">Debe ingresar su nombre</div>
+        </div>
+        <div class="form-group mt-4">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" class="form-control" ngModel name="email" #email="ngModel" id="email" placeholder="Ingrese su correo electrónico"
+            email>
+          <div *ngIf="!email.valid && email.touched" class="text-primary mt-2">Debe ingresar su correo electrónico</div>
+        </div>
+        <div class="form-group mt-4">
+          <label for="file">Curriculum Vitae</label>
+          <input class="ml-3" type="file" ng2FileSelect [uploader]="uploader" />
+        </div>
+        <div class="mt-5">
+          <re-captcha (resolved)="resolved($event)" siteKey="6LezuToUAAAAAIcYZcA4RxZyDDPKIWm90I5JZLX_"></re-captcha>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg mt-5" [ngClass]="{'disab': !f.valid || archivo == ''}" [disabled]='!f.valid || archivo == ""' >Enviar Solicitud</button>
+        <button type="reset" class="btn btn-secondary btn-lg mt-5 ml-3 text-white" style="cursor: pointer;" (click)="reset(f)">Reestablecer</button>
+      </form>
+    </div>
+  </div>
+</div>

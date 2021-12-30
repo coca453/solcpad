@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row section">
+    <div class="col-12 section-title">
+      <i class="fa fa-file-text-o mr-3"></i>Artículos
+    </div>
+  </div>  
+  <ul class="list-group mt-4">
+    <li class="list-group-item list-group-item-light" *ngFor="let articulo of articulos">
+      <i class="fa fa-external-link mr-3"></i>
+      <a href="{{articulo.url}}" target="blank" class="a-articulo">
+        <span [innerHtml]="(articulo.fecha | date: 'd/MM/yyyy') + ' - ' + articulo.titulo"></span>
+      </a>
+    </li>
+  </ul>
+  <div class="mt-4">
+    <pagination [totalItems]="total" [maxSize]="5" [itemsPerPage]="maxResults" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)" previousText="Anterior" nextText="Siguiente"></pagination>
+  </div>
+</div>

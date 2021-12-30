@@ -1,0 +1,145 @@
+.navbar {
+    background-color: #133197;
+    background: radial-gradient(at bottom left, #133197, #3345BF);
+    border-top: 1px solid #3B4AC9;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.30px;
+    padding: 0 0 0 15px;
+} 
+
+li.nav-item a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 12px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+li.nav-item a:visited {
+    color: #FFFFFF;
+}
+
+li.nav-item a:hover {
+    color: #FF852B;
+}
+
+li.nav-item a:focus {
+    color: #FFFFFF;
+}
+
+div.dropdown-menu a {
+    color: #133197;
+}
+
+div.dropdown-menu a:visited {
+    color: #133197;
+}
+
+div.dropdown-menu a:hover {
+    color: #FF852B;    
+}
+
+div.dropdown-menu a:focus {
+    color: #FF852B;
+    background-color: #F8F9FA;
+}
+
+@media screen and (min-width: 320px) and (max-width: 639px) {
+    
+    li.nav-item a {
+        padding: 8px 8px;
+        font-size: 12px;
+    }
+
+    div.dropdown-menu {
+        background: transparent;
+        border: none;
+    }
+
+    div.dropdown-menu a {
+        color: #FFFFFF;
+        background: transparent;
+    }
+    
+    div.dropdown-menu a:visited {
+        color: #FFFFFF;
+        background: transparent;
+    }
+    
+    div.dropdown-menu a:hover {
+        color: #FF852B;
+        background: transparent;
+    }
+    
+    div.dropdown-menu a:focus {
+        color: #FF852B;
+        background: transparent;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    
+    li.nav-item a {
+        padding: 9px 9px;
+        font-size: 12px;
+    }
+
+    div.dropdown-menu {
+        background: transparent;
+        border: none;
+    }
+
+    div.dropdown-menu a {
+        color: #FFFFFF;
+        background: transparent;
+    }
+    
+    div.dropdown-menu a:visited {
+        color: #FFFFFF;
+        background: transparent;
+    }
+    
+    div.dropdown-menu a:hover {
+        color: #FF852B;
+        background: transparent;
+    }
+    
+    div.dropdown-menu a:focus {
+        color: #FF852B;
+        background: transparent;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    li.nav-item a {
+        padding: 10px 10px;
+    }
+
+    div.dropdown-menu {
+        background: transparent;
+        border: none;
+    }
+
+    div.dropdown-menu a {
+        color: #FFFFFF;
+        background: transparent;
+    }
+    
+    div.dropdown-menu a:visited {
+        color: #FFFFFF;
+        background: transparent;
+    }
+    
+    div.dropdown-menu a:hover {
+        color: #FF852B;
+        background: transparent;
+    }
+    
+    div.dropdown-menu a:focus {
+        color: #FF852B;
+        background: transparent;
+    }
+}

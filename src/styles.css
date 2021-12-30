@@ -1,0 +1,76 @@
+/* General */
+
+html {
+    font-size: 13px;
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    color: #333333;
+    background-color: #FAFAFA;
+    font-size: 13px;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 0 70px 0;
+    padding: 0;
+}
+
+.section {
+    border-bottom: 1px solid #FF750F;
+    background-color: #FF852B;
+    background: radial-gradient(at bottom left, #FF750F, #FF852B);
+    margin-bottom: 5px;
+}
+
+.m-card-header {
+    background-color: #133197;
+    background: radial-gradient(at bottom right, #133197, #3345BF);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+.m-media-title {
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+
+.m-media-description {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.section-title {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 9px 0 9px 27px;
+}
+
+.form-control.ng-touched.ng-invalid {
+    border: 1px solid #CF392B;
+}
+
+.form-control.ng-touched.ng-valid {
+    border: 1px solid #339933;
+}
+
+.btn {
+    white-space: normal !important;
+    word-wrap: break-word; 
+}
+
+a.active.focus, a.active:focus, a.focus, a:active.focus, a:active:focus, a:focus,
+button.active.focus, button.active:focus, button.focus, button:active.focus, button:active:focus, button:focus,
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+    outline-color: transparent;
+    outline-width: 0;
+    outline-style: none;
+}

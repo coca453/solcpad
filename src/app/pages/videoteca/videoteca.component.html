@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row section">
+    <div class="col-12 section-title">
+      <i class="fa fa-video-camera mr-3"></i>Videoteca
+    </div>
+  </div>  
+  <div class="form-row mt-3">
+    <div class="col-md-4" *ngFor="let video of videos">
+      <div class="card m-3">
+        <div class="card-header card-bg p-3">
+          <iframe width="100%" height="100%" [src]="getSafeURL(video.url)" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">                
+          <span class="card-text" [innerHtml]=video.titulo></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 mt-3">
+      <pagination class="ml-3" [totalItems]="total" [maxSize]="5" [itemsPerPage]="maxResults" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)" previousText="Anterior" nextText="Siguiente"></pagination>
+    </div>
+  </div>
+</div>

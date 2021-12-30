@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <div class="row section">
+    <div class="col-12 section-title">
+      <i class="fa fa-camera mr-3"></i>Fotogalería
+    </div>
+  </div>  
+  <div class="form-row mt-3">
+    <div class="col-sm-2" *ngFor="let foto of fotos">
+      <div class="card mt-2">
+        <div class="card-body p-2">
+          <a data-toggle="modal" data-target="#popup" (click)="fotoSeleccionada = foto;" style="cursor: pointer">
+            <img class="mx-auto d-block img-fluid" src="assets/fotogaleria/fotos/{{foto.id}}ch.jpg" alt="{{foto.titulo}}" title="{{foto.titulo}}">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 mt-4">
+      <pagination [totalItems]="totalFotos" [maxSize]="5" [itemsPerPage]="maxResults" [(ngModel)]="currentPageFotos" (pageChanged)="pageChangedFotos($event)"
+        previousText="Anterior" nextText="Siguiente"></pagination>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" *ngIf="fotoSeleccionada" id="popup" tabindex="-1" role="dialog" aria-labelledby="popupLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-title" [innerHtml]=fotoSeleccionada.titulo></span>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-thumbnail mx-auto d-block img-fluid" src="assets/fotogaleria/fotos/{{fotoSeleccionada.id}}gr.jpg"
+          alt="{{fotoSeleccionada.titulo}}">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.s-card-header {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+}
+
+.text-socios {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.h-card-header {
+    background-color: #444444;
+    background: radial-gradient(at bottom left, #444444, #666666);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.disab{
+  cursor: not-allowed;
+}

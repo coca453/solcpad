@@ -1,0 +1,22 @@
+.q-card-header {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+}
+
+.text-quienes-somos {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.q-header-tertiary {
+    background-color: #444444;
+    background: radial-gradient(at bottom left, #444444, #666666);
+    color: #FFFFFF;
+}
+
+.q-header-primary {
+    background-color: #133197;
+    background: radial-gradient(at bottom right, #133197, #3345BF);
+    color: #FFFFFF;
+}

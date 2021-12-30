@@ -1,0 +1,56 @@
+<nav class="navbar navbar-dark navbar-expand-lg">
+
+  <button #navbarToggler class="navbar-toggler mt-2 mb-2" type="button" data-toggle="collapse" data-target="#navbar-scp" aria-controls="navbar-scp" aria-expanded="false" aria-label="Secciones" style="cursor: pointer;">
+    <span class="navbar-toggler-icon m-1"></span>
+  </button>
+
+  <div class="navbar-collapse collapse" id="navbar-scp">
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/" (click)="collapseNav()">Inicio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="" id="menuInstitucional" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">Institucional&#160;</a>
+        <div class="dropdown-menu" aria-labelledby="menuInstitucional">
+          <a class="dropdown-item" routerLink="/institucional/quienes-somos" (click)="collapseNav()">Quienes Somos</a>
+          <a class="dropdown-item" routerLink="/institucional/miembros" (click)="collapseNav()">Miembros</a>
+          <a class="dropdown-item" href="assets/archivos/institucional/Estatuto_SOLCPAD.pdf" target="blank" (click)="collapseNav()">Estatuto</a>
+          <a class="dropdown-item" href="assets/archivos/institucional/codigo-etico-solcpad.pdf" target="blank" (click)="collapseNav()">Código Ético</a>
+          <a class="dropdown-item" href="assets/archivos/institucional/Palabras_Presidente.pdf" target="blank" (click)="collapseNav()">Palabras del Presidente</a>
+          <a class="dropdown-item" href="assets/archivos/institucional/Palabras_Vicepresidente.pdf" target="blank" (click)="collapseNav()">Palabras del Vice Presidente</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/noticias" (click)="collapseNav()">Noticias</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/entrevistas" (click)="collapseNav()">Entrevistas a Expertos</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/articulos" (click)="collapseNav()">Artículos</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/fotogaleria" (click)="collapseNav()">Fotogalería</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/videoteca" (click)="collapseNav()">Videoteca</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/socios" (click)="collapseNav()">Socios</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/material-socios" (click)="collapseNav()">Material Exclusivo para Socios</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/investigaciones" (click)="collapseNav()">Investigaciones</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link" routerLink="/contacto" (click)="collapseNav()">Contacto</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</nav>

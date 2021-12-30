@@ -1,0 +1,11 @@
+.text-frase {
+    font-family: 'PT Sans', sans-serif;
+    color: #000055;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.bg-header {
+    background: linear-gradient(#FAFAFA, #E8ECFC);
+}

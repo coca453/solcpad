@@ -70,8 +70,27 @@
 
     <!-- Izquierda -->
 
+    
     <div class="col-md mt-3 p-0">
-
+      
+      <div class="card ml-3 mr-3 mb-2">
+        <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="1500">
+          <div class="carousel-inner">
+            <div class="carousel-item" *ngFor="let item of Arr(num).fill(1); index as i"
+              [ngClass]="{'active': i == 0 }">
+              <a href="#" class="nav-link p-0" routerLink="/fotogaleria">
+                <img src="assets/img/slider-home-congreso/{{i + 1 | number }}.jpg" alt="Imagenes Destacadas"
+                  style="display: block; width: 100%;">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="text-carousel">Congreso Solcpad Colombia 2021</div>
+                  <div class="text-carousel-link mt-2">Click aqui para acceder a la fotogalería</div>
+                </div>
+                <div class="card-img-overlay bg-overlay"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--div class="card">
             <div class="card-body p-2">
               <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="3000">
